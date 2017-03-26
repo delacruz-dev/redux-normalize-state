@@ -1,0 +1,35 @@
+{
+  "id":"qfbezweLq6",
+  "title":"This form has a title",
+  "fields":[{
+    "id":"29",
+    "ref":"r15",
+    "type": "short_text",
+    "title":"Short Text 15"
+  }, {
+    "id":"16",
+    "ref":"a_group_field_ref",
+    "title":"group field",
+    "type":"group",
+    "description":"Question group description",
+    "attachment":{"type":"image",
+    "href":"https://images.typeform.com/images/4bcd3"},
+    "show_button":true,
+    "button_text":"Some text",
+    "fields":[{
+      "id":"17",
+      "ref":"nice_readable_website_reference",
+      "title":"website",
+      "type":"website",
+      "properties":{
+        "description":"Cool description for the website"
+      },
+      "required":false
+    }]
+  }, {
+    "id":"18",
+    "ref":"r18",
+    "type": "short_text",
+    "title":"Short Text 18"
+  }]
+}
