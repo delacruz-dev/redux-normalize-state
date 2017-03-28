@@ -9,9 +9,11 @@ export default function getInitialState () {
     fields: blockList
   })
 
-  const form = new schema.Entity('form', {
-    fields: blockList
-  });
+  const normalizedData = normalize(originalData.fields, blockList)
 
-  return normalize(originalData, form);
+  return {
+    ...originalData,
+    fieldRefs: normalizedData.result,
+    fields: normalizedData.entities.fields
+  }
 }

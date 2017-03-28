@@ -7,5 +7,5 @@ export function getDescription(state, id) {
 }
 
 export function getFields(state, id) {
-  return state.form[id].fields
+  return state.fieldRefs
 }
