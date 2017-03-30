@@ -8,7 +8,7 @@ import reducer from './reducer'
 
 const store = createStore(reducer)
 
-console.info(store.getState())
+window.__store = store
 
 ReactDOM.render(
   <Provider store={store}>
