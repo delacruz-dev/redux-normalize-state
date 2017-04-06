@@ -4,7 +4,7 @@ import { getFields } from './selectors'
 
 function mapStateToProps (state, ownProps) {
   return {
-    fields: getFields(state)
+    fields: ownProps.fields || getFields(state)
   }
 }
 

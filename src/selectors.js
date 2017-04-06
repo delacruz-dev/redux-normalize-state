@@ -9,3 +9,7 @@ export function getDescription(state, id) {
 export function getFields(state, id) {
   return state.fieldRefs
 }
+
+export function getFieldsInGroup (state, id) {
+  return state.fields[id].fields
+}
